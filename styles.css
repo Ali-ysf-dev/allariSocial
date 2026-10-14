@@ -1,0 +1,152 @@
+:root {
+  --green: #3f6224;
+  --ink: #1b3b23;
+  --cream: #fefeec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: #e4eee4;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+}
+
+.stage {
+  position: relative;
+  width: min(100vw, calc(100dvh * 858 / 1528));
+  aspect-ratio: 858 / 1528;
+  overflow: hidden;
+  background: #fff;
+  container-type: size;
+}
+
+.bg {
+  position: absolute;
+  width: 174.83%;
+  height: auto;
+  left: -21.2%;
+  top: -28.66%;
+  opacity: 0.4;
+  max-width: none;
+  transform: scale(1.001);
+  transform-origin: 40.73% 60.11%;
+}
+
+.logo {
+  position: absolute;
+  left: 12.35%;
+  top: 5.24%;
+  width: 73.8%;
+  height: auto;
+  z-index: 1;
+}
+
+.company,
+.tagline {
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  margin: 0;
+  text-align: center;
+  color: var(--green);
+  z-index: 1;
+}
+
+.company {
+  top: 22.85%;
+  color: rgb(46, 100, 23);
+  font-family: "Cormorant Garamond", "Libre Baskerville", Georgia, serif;
+  font-size: 6.368cqw;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: none;
+  letter-spacing: 0;
+  line-height: 1.396;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tagline {
+  top: 27.7%;
+  font-size: 3.36cqw;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+.tagline-ar {
+  top: 30.55%;
+  font-family: "Noto Naskh Arabic", "Libre Baskerville", serif;
+  font-size: 3.65cqw;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+.tagline-eco {
+  top: 33.2%;
+  font-size: 3.15cqw;
+  font-style: normal;
+}
+
+.links {
+  position: absolute;
+  z-index: 1;
+  left: 18.88%;
+  width: 61.9%;
+  top: 44.9%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.48cqh;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6.5cqh;
+  border: 0.38cqw solid var(--green);
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--ink);
+  box-shadow: 1.15cqw 0.58cqh 0 var(--green);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 2.2cqh;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translate(0.35cqw, 0.22cqh);
+  box-shadow: 0.7cqw 0.42cqh 0 var(--green);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.signature {
+  position: absolute;
+  z-index: 1;
+  left: 29.5%;
+  top: 88.2%;
+  width: 38.8%;
+  height: auto;
+  pointer-events: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>allari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <img class="bg" src="assets/background.jpg" alt="" />
+      <img class="logo" src="assets/logo.png" alt="allari" />
+
+      <p class="company">Ibrahim Allari and Sons Co.</p>
+      <p class="tagline">Non-woven bags solutions</p>
+      <p class="tagline tagline-ar" lang="ar" dir="rtl">حلول الأكياس غير المنسوجة</p>
+      <p class="tagline tagline-eco">eco-friendly</p>
+
+      <!-- Paste each destination into href when the links are ready. -->
+      <nav class="links" aria-label="Allari">
+        <a class="btn" href="">Web Site</a>
+        <a class="btn" href="">E-mail</a>
+        <a class="btn" href="">Instagram</a>
+        <a class="btn" href="">Tiktok</a>
+        <a class="btn" href="">X</a>
+      </nav>
+
+      <img class="signature" src="assets/signature.png" alt="Sustainable Together" />
+    </main>
+
+    <script>
+      document.querySelectorAll(".btn").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          if (!link.getAttribute("href")) event.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
